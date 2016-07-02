@@ -175,7 +175,7 @@
                 <h1 class="postShorten-title" itemprop="headline">
                     
                         <a class="link-unstyled" href="/2016/06/29/post/">
-                            Hello
+                            Murmur
                         </a>
                     
                 </h1>
@@ -191,7 +191,23 @@
             </div>
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    <h2 id="My-first-post"><a href="#My-first-post" class="headerlink" title="My first post"></a>My first post</h2>
+                    <h5 id="首先恭喜Github-Blog開張啦，也是第一篇Markdown的文章（撒花～"><a href="#首先恭喜Github-Blog開張啦，也是第一篇Markdown的文章（撒花～" class="headerlink" title="首先恭喜Github Blog開張啦，也是第一篇Markdown的文章（撒花～"></a>首先恭喜Github Blog開張啦，也是第一篇Markdown的文章（撒花～</h5><p>看來可以趁這個機會好好鞭策自己摸索一下了！</p>
+<p>聊聊為何架起這個Github page好了<br>原本的Blog是架Wordpress在AWS上，但某一天突然出現資料庫連線錯誤的錯誤訊息，我也搜尋不到相關的解決問題（功力尚淺）。<br>所以我打算把頭一年免費的優惠用完之後，就跟AWS說再見惹。</p>
+<p>然後一直想要找找有沒有能夠免費的Blog形式，又是給我這種偶爾才有發文章需求的人使用的網站，結果Survey了之後，發現GitHub pages 或許是個不錯的方法！</p>
+<p>而確實安裝過程並不困難，使用的是 <a href="https://hexo.io/zh-tw/" target="_blank" rel="external">Hexo</a> 來架設。</p>
+<p>安裝的過程就如同網站上所說的操作即可。</p>
+<h4 id="安裝前需要環境"><a href="#安裝前需要環境" class="headerlink" title="安裝前需要環境"></a>安裝前需要環境</h4><ul>
+<li>Node.js</li>
+<li>Git</li>
+</ul>
+<h4 id="安裝Hexo"><a href="#安裝Hexo" class="headerlink" title="安裝Hexo"></a>安裝Hexo</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo install -g hexo-cli</div></pre></td></tr></table></figure>
+<h4 id="Init"><a href="#Init" class="headerlink" title="Init"></a>Init</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init github-blog</div><div class="line">$ <span class="built_in">cd</span> github-blog</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
+<p>這樣基本上就算是安裝好了<br>要如何編輯設定等皆照著文件內做即可</p>
+<h4 id="產生檔案"><a href="#產生檔案" class="headerlink" title="產生檔案"></a>產生檔案</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<h4 id="Local端檢視網站"><a href="#Local端檢視網站" class="headerlink" title="Local端檢視網站"></a>Local端檢視網站</h4><p> <a href="http://localhots:4000" target="_blank" rel="external">http://localhots:4000</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure></p>
+<h3 id="部署網站設定"><a href="#部署網站設定" class="headerlink" title="部署網站設定"></a>部署網站設定</h3><h4 id="Github設定"><a href="#Github設定" class="headerlink" title="Github設定"></a>Github設定</h4><h6 id="開一個專案，名稱命名為-yourusername-github-io"><a href="#開一個專案，名稱命名為-yourusername-github-io" class="headerlink" title="開一個專案，名稱命名為 yourusername.github.io"></a>開一個專案，名稱命名為 yourusername.github.io</h6><h4 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h4><h6 id="config-yml-修改設定"><a href="#config-yml-修改設定" class="headerlink" title="_config.yml 修改設定"></a>_config.yml 修改設定</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: git@github.com:yourusername/yourusername.github.io.git</div><div class="line">  branch: [branch]</div><div class="line">  message: [message]</div></pre></td></tr></table></figure>
+<h4 id="部署網站"><a href="#部署網站" class="headerlink" title="部署網站"></a>部署網站</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<h6 id="Finish-快去你的網站看看吧～"><a href="#Finish-快去你的網站看看吧～" class="headerlink" title="Finish 快去你的網站看看吧～"></a>Finish 快去你的網站看看吧～</h6>
                     
                         
                     
